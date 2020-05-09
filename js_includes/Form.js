@@ -26,6 +26,9 @@ define_ibex_controller({
             this.obligatoryRadioErrorGenerator =
                 dget(this.options, "obligatoryRadioErrorGenerator",
                     function (field) { return "You must select an option for \u2018" + field + "\u2019."; });
+            this.conditionalErrorGenerator =
+                dget(this.options, "conditionalErrorGenerator",
+                    function (field) { return "If the example is valid, you must select an option for \u2018" + field + "\u2019."; });
 
             var t = this;
 
@@ -81,6 +84,8 @@ define_ibex_controller({
                             ["Field value", csv_url_encode(inp.attr('value'))]]);
                     }
 
+                    var example_invalid = false;
+
                     var checks = $(dom).find("input[type=checkbox]");
                     for (var i = 0; i < checks.length; ++i) {
                         var check = $(checks[i]);
@@ -89,6 +94,9 @@ define_ibex_controller({
                         if (! check.attr('checked') && check.hasClass('obligatory')) {
                             alertOrAddError(check.attr('name'), t.obligatoryCheckboxErrorGenerator(check.attr('name')));
                             return;
+                        }
+                        if (check.attr('checked') && check.hasClass('validity')) {
+                            example_invalid = true;
                         }
 
                         rlines.push([["Field name", check.attr('name')],
@@ -109,11 +117,13 @@ define_ibex_controller({
                     for (k in rgs) {
                         // Check if it's oblig.
                         var oblig = false;
+                        var condOblig = false;
                         var oneIsSelected = false;
                         var oneThatWasSelected;
                         var val;
                         for (var i = 0; i < rgs[k].length; ++i) {
                             if (rgs[k][i].hasClass('obligatory')) oblig = true;
+                            if (rgs[k][i].hasClass('condOblig')) condOblig = true;
                             if (rgs[k][i].attr('checked')) {
                                 oneIsSelected = true;
                                 oneThatWasSelected = i;
@@ -122,6 +132,10 @@ define_ibex_controller({
                         }
                         if (oblig && (! oneIsSelected)) {
                             alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
+                            return;
+                        }
+                        if (condOblig && (! oneIsSelected) && (! example_invalid)) {
+                            alertOrAddError(rgs[k][0].attr('name'), t.conditionalErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
                         if (oneIsSelected) {
