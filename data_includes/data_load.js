@@ -61,10 +61,10 @@ for (var i = 0; i < 20; i++) {
             html: "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><a href='https://docs.google.com/document/d/1Kq1iWTqxLJFW284HfycpS2CGpwQefRbA32AoApzrDo0/edit' target='_blank'>Coding Instructions</a></td></tr>" +
                 "<tr style='background-color: azure;'>" +
-                "<td colspan='1' style='padding: .5em; font-size: 16px; font-weight: bold;'>" +
+                "<td colspan='1' style='padding: .5em; font-size: 16px; font-weight: bold; border-top: 1px solid black; border-left: 1px solid black;'>" +
                 "Student" +
                 "</td>" +
-                "<td colspan='9' style='padding: 1em; font-size: 16px;'>" +
+                "<td colspan='9' style='padding: 1em; font-size: 16px; border-top: 1px solid black; border-right: 1px solid black;'>" +
                 row["student"] +
                 "</td>" +
                 "<tr style='background-color: azure;'>" +
@@ -75,22 +75,22 @@ for (var i = 0; i < 20; i++) {
                 row["teacher"] +
                 "</td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'>1. Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'>2. Display of Active Listening<br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                 "<tr>" +
                 "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">Low </label></td>" +
                 "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">Mid </label></td>" +
                 "<td colspan='4'><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">High </label></td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'>3. Use of Student Contribution<br/><i>To what degree does the teacher use the student’s contribution to make a mathematical point?</i></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Use of Student Contribution</b><br/><i>To what degree does the teacher use the student’s contribution to make a mathematical point?</i></td></tr>" +
                 "<tr>" +
                 "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">Low </label></td>" +
                 "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">Mid </label></td>" +
                 "<td colspan='4'><input name=\"forward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">High </label></td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'>4. Comments?</td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b></td></tr>" +
                 "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                 "</table>"
         }],
