@@ -45,15 +45,15 @@ span.retry:hover {
 span.retry:visited {
     color: blue;
 }
-span.instructions {
+a.instructions {
     color: blue;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
-span.instructions:hover {
+a.instructions:hover {
     color: #B0DBFF;
 }
-span.instructions:visited {
+a.instructions:visited {
     color: blue;
 }
