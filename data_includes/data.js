@@ -68,8 +68,6 @@ var items = [
     //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
-    ["task", "Question", {q: "Is this sentence correct?"}],
-    ["task", "Question", {q: "Is this sentence correct?"}]
     ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
     ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
         "Question", {hasCorrect: false, randomOrder: false,
