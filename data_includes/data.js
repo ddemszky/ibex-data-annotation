@@ -75,6 +75,39 @@ var form_questions = "<p><b>Validity</b><br/>" +
     "<i>If you check either of the boxes below, no need to code the example further.</i><br/>" +
     "Check if the teacher's utterance is entirely off-task: <input type='checkbox' name='on_task'><br/>" +
     "Check if the student does not present an opportunity for uptake: <input type='checkbox' name='student_idea'><br/></p>" +
+    "<div class=\"wrap\">\n" +
+    "  <h1 class=\"likert-header\">This is a Likert Scale survey</h1>\n" +
+    "    <label class=\"statement\">Backward-looking</label>\n" +
+    "    <ul class='likert'>\n" +
+    "      <li>\n" +
+    "        <input type=\"radio\" name=\"backward\" value=\"low\">\n" +
+    "        <label>Low</label>\n" +
+    "      </li>\n" +
+    "      <li>\n" +
+    "        <input type=\"radio\" name=\"backward\" value=\"mid\">\n" +
+    "        <label>Mid</label>\n" +
+    "      </li>\n" +
+    "      <li>\n" +
+    "        <input type=\"radio\" name=\"backward\" value=\"high\">\n" +
+    "        <label>High</label>\n" +
+    "      </li>\n" +
+    "    </ul>\n" +
+    "    <label class=\"statement\">Forward-looking</label>\n" +
+"    <ul class='likert'>\n" +
+"      <li>\n" +
+"        <input type=\"radio\" name=\"foward\" value=\"low\">\n" +
+"        <label>Low</label>\n" +
+"      </li>\n" +
+"      <li>\n" +
+"        <input type=\"radio\" name=\"forward\" value=\"mid\">\n" +
+"        <label>Mid</label>\n" +
+"      </li>\n" +
+"      <li>\n" +
+"        <input type=\"radio\" name=\"forward\" value=\"high\">\n" +
+"        <label>High</label>\n" +
+"      </li>\n" +
+"    </ul>\n" +
+    "</div>" +
     "<p><b>Displaying Active Listening</b><br/> <input type='radio' name='backward' value='1'><input type='radio' name='backward' value='2'><input type='radio' name='backward' value='3'></p>" +
     "<p><b>Using the Student's Contribution</b><br/> <input type='radio' name='forward' value='1'><input type='radio' name='forward' value='2'><input type='radio' name='forward' value='3'></p>"
 
