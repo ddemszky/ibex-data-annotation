@@ -78,26 +78,26 @@ var prompts = ["<b>Student:</b> i was going to say that that's just like a ruler
 for (prompt of prompts) {
     items.push(
         ["task", "Form", {
-            html: "<table>" +
+            html: "<table style='width: 40em; padding: 1em;'>" +
                 "<tr><td colspan='3' style='width: 40em; padding: 1em; font-size: 16px; background-color: azure; border: 1px solid black;'>" +
                 prompt +
                 "</td></tr>" +
-                "<tr><td colspan='3' style='width: 30em; padding: 1em;'>Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
-                "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
-                "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em; padding-top: 1em;\">Display of Active Listening<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr style=\"width: 30em; padding: 1em; text-align: center;\">" +
+                "<tr><td colspan='3'>Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr><td colspan='3'><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
+                "<tr><td colspan='3'><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
+                "<tr><td colspan='3'>Display of Active Listening<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr style=\"text-align: center;\">" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
                 "</tr>" +
-                "<tr><td colspan='3' style=\"width: 30em; padding: 1em;\">Use of Student Idea<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr style=\"width: 30em; padding: 1em; text-align: center;\">" +
+                "<tr><td colspan='3'>Use of Student Idea<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr style=\"text-align: center;\">" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
                 "</tr>" +
-                "<tr><td colspan=\"3\" style=\"width: 30em; padding: 1em;\">Comments?</td></tr>" +
+                "<tr><td colspan=\"3\">Comments?</td></tr>" +
                 "<tr><td colspan=\"3\"><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                 "</table>"
         }],
