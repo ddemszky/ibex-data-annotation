@@ -11,3 +11,16 @@ table {
 td {
     width: 4em ;
 }
+
+span.instructions {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+span.instructions:hover {
+    color: #B0DBFF;
+}
+span.instructions:visited {
+    color: blue;
+}
