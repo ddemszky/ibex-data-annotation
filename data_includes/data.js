@@ -71,10 +71,12 @@ var prompts = ["<b>Student:</b> i was going to say that that's just like a ruler
     "<b>Student:</b> you can't because they're saying how much did student l spend for both items? both items. so they're saying you have to add those two 'cause spent like <cur>57.95 on a bike and <cur>12.65 on a helmet. and it's gonna be how much did she spend all together?<br/><b>Teacher:</b> it doesn't say all together, but that's the feeling. that's what you're thinking as you read this. you read enough of these problems. this is sounds like an all together problem. and all together is usually addition.",
     "<b>Student:</b> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30.<br/><b>Teacher:</b> awesome, very, very carefully, student b, help him carry that over to the cookie plate, and you may have to break it in half to get it to fit on the plate, and that's fine. we have to remember what we're doing, sitting properly. we're about to get in groups in just a minute. so her sister, amy, has more on. we're working backwards. and now tommy - student d, read about tommy.",
     "<b>Student:</b> yeah, but you repeated it on the --<br/><b>Teacher:</b> no, you should. that is why the rate is all right. you chose six thirds so this third -- this one is -- you have more. put it on that side. are you recording it somewhere in your journal? everybody should record it so that you have something to work with later on. record, record, record. why you doing that, student v? no. no, i want you to take your hand off because you are switching cards around. leave it there. don't do that. it's sneaky and i don't like it. pull out the card. once you pull it out put it on the center. the other one puts in on the center. move it fast. this one is what?",];
-var form_questions = "<p>Check if the teacher's utterance is entirely off-task: <input type='checkbox' name='on_task'> <i>If you check this box, no need to code this example further.</i><br/>" +
-    "Check if the student does not present an opportunity for uptake: <input type='checkbox' name='student_idea'><i>If you check this box, no need to code this example further.</i><br/>" +
-    "Backward-looking <input type='radio' name='backward' value='1'><input type='radio' name='backward' value='2'><input type='radio' name='backward' value='3'></p>" +
-    "Forward-looking <input type='radio' name='forward' value='1'><input type='radio' name='forward' value='2'><input type='radio' name='forward' value='3'></p>"
+var form_questions = "<p><b>Validity</b><br/>" +
+    "<i>If you check either of the boxes below, no need to code the example further.</i><br/>" +
+    "Check if the teacher's utterance is entirely off-task: <input type='checkbox' name='on_task'><br/>" +
+    "Check if the student does not present an opportunity for uptake: <input type='checkbox' name='student_idea'><br/></p>" +
+    "<p><b>Displaying Active Listening</b><br/> <input type='radio' name='backward' value='1'><input type='radio' name='backward' value='2'><input type='radio' name='backward' value='3'></p>" +
+    "<p><b>Using the Student's Contribution</b><br/> <input type='radio' name='forward' value='1'><input type='radio' name='forward' value='2'><input type='radio' name='forward' value='3'></p>"
 
 for (prompt of prompts) {
     items.push(
