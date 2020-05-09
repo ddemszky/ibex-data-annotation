@@ -10,6 +10,6 @@ p {
     text-align: left;
 }
 
-.prompt {
-    font-size: 24pt;
-}
+p.prompt {
+     font-size: 24pt;
+ }
