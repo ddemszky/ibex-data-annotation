@@ -1,5 +1,6 @@
-var shuffleSequence = seq("intro",
-    sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+//var shuffleSequence = seq("intro",
+//    sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq("intro", randomize("task"));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -18,7 +19,8 @@ var defaults = [
         leftComment: "(Bad)", rightComment: "(Good)"
     },
     "Question", {
-        hasCorrect: false
+        hasCorrect: false,
+        as: ["Yes", "No"],
     },
     "Message", {
         hideProgressBar: true
@@ -66,6 +68,8 @@ var items = [
     //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
+    ["task", "Question", {q: "Is this sentence correct?"}],
+    ["task", "Question", {q: "Is this sentence correct?"}]
     ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
     ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
         "Question", {hasCorrect: false, randomOrder: false,
@@ -74,6 +78,10 @@ var items = [
             "Press 2 or click here for this answer.",
             "Press 3 or click here for this answer."]}],
     ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
+
+    // my task
+    ["task", "Question", {q: "Is this sentence correct?"}],
+    ["task", "Question", {q: "Is this sentence incorrect?"}],
 
     //
     // Two "real" (i.e. non-filler) self-paced reading items with corresponding acceptability judgment items.
