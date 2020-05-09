@@ -47,12 +47,12 @@ span.retry:visited {
 }
 a.instructions {
     color: #008BFF;
-    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
 a.instructions:hover {
-    color: #B0DBFF;
+    color: #003D71;
+
 }
 a.instructions:visited {
     color: #008BFF;
