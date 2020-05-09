@@ -98,9 +98,9 @@ var teacher = ["a ruler for one inch?",
     "awesome, very, very carefully, student b, help him carry that over to the cookie plate, and you may have to break it in half to get it to fit on the plate, and that's fine. we have to remember what we're doing, sitting properly. we're about to get in groups in just a minute. so her sister, amy, has more on. we're working backwards. and now tommy - student d, read about tommy.",
     "no, you should. that is why the rate is all right. you chose six thirds so this third -- this one is -- you have more. put it on that side. are you recording it somewhere in your journal? everybody should record it so that you have something to work with later on. record, record, record. why you doing that, student v? no. no, i want you to take your hand off because you are switching cards around. leave it there. don't do that. it's sneaky and i don't like it. pull out the card. once you pull it out put it on the center. the other one puts in on the center. move it fast. this one is what?"];
 
-var data = $.csv.toObjects('data.csv');
 
-for (var i = 0; i < data.length; i++) {
+
+for (var i = 0; i < data_entries.length; i++) {
     row = data[i];
     items.push(
         ["task", "Form", {
