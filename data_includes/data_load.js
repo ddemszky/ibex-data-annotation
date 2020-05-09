@@ -64,7 +64,7 @@ for (var i = 0; i < 20; i++) {
                 "<td colspan='10' style='border: 1px solid black; padding=1em;'>" +
                 "<table>" +
                 "<tr>" +
-                "<td colspan='1' style='padding: .5em;'>" +
+                "<td colspan='1' style='width: 4em; padding: .5em;'>" +
                 "Student" +
                 "</td>" +
                 "<td colspan='9' style='padding: .5em;'>" +
@@ -72,7 +72,7 @@ for (var i = 0; i < 20; i++) {
                 "</td>" +
                 "</tr>" +
                 "<tr>" +
-                "<td colspan='1' style='padding: .5em;'>" +
+                "<td colspan='1' style='width: 4em; padding: .5em;'>" +
                 "Teacher" +
                 "</td>" +
                 "<td colspan='9' style='padding: .5em;'>" +
