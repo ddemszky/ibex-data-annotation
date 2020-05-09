@@ -84,7 +84,7 @@ for (var i = 0; i < 20; i++) {
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"off_task\" id='off_task' class='validity'/><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
-                "<tr><td colspan='10'><input type=\"checkbox\" name=\"no_student_idea\" id='no_student_idea' class='validity'/><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
+                "<tr><td colspan='10'><input type=\"checkbox\" name=\"no_student_idea\" id='no_student_idea' class='validity'/><label for=\"no_student_idea\">Student doesn't present an idea.</label></td></tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                 "<tr>" +
                 "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"low\" id=\"backward\" class='condOblig'/><label for=\"backward\">Low </label></td>" +
