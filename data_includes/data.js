@@ -102,18 +102,18 @@ for (var i = 0; i < student.length; i++) {
     items.push(
         ["task", "Form", {
             html: "<table>" +
-                "<tr>" +
-                "<td colspan='1' style='margin: 1em; font-size: 16px; background-color: azure;'>" +
+                "<tr style='background-color: azure; border: 1px solid black;'>" +
+                "<td colspan='1' style='margin: 1em; font-size: 16px;'>" +
                 "Student" +
                 "</td>" +
-                "<td colspan='2' style='margin: 1em; font-size: 16px; background-color: azure;'>" +
+                "<td colspan='2' style='margin: 1em; font-size: 16px;'>" +
                 student[i] +
                 "</td>" +
-                "<tr>" +
-                "<td colspan='1' style='margin: 1em; font-size: 16px; background-color: azure;'>" +
+                "<tr style='background-color: azure; border: 1px solid black;'>" +
+                "<td colspan='1' style='margin: 1em; font-size: 16px;'>" +
                 "Teacher" +
                 "</td>" +
-                "<td colspan='2' style='margin: 1em; font-size: 16px; background-color: azure;'>" +
+                "<td colspan='2' style='margin: 1em; font-size: 16px;'>" +
                 teacher[i] +
                 "</td>" +
                 "</tr>" +
