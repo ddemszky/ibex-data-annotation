@@ -93,9 +93,9 @@ for (prompt of prompts) {
                 "</tr>" +
                 "<tr><td colspan='3' style='padding-top: 1em; padding-bottom: 1em;'>Use of Student Idea<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
                 "<tr>" +
-                "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
-                "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
-                "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
+                "<td><input name=\"forward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
+                "<td><input name=\"forward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
+                "<td><input name=\"forward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan=\"3\" style='padding-top: 1em; padding-bottom: 1em;'>Comments?</td></tr>" +
                 "<tr><td colspan=\"3\"><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
