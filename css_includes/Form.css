@@ -5,3 +5,11 @@
 div {
     width: 40em;
 }
+
+table {
+    table-layout: fixed ;
+    width: 100% ;
+}
+td {
+    width: 10% ;
+}
