@@ -79,7 +79,7 @@ for (prompt of prompts) {
     items.push(
         ["task", "Form", {
             html: "<table>" +
-                "<tr><td colspan='3' style='width: 40em; padding: 1em; font-size: 24px; background-color: azure; border-width: 2px;'>" +
+                "<tr><td colspan='3' style='width: 40em; padding: 1em; font-size: 16px; background-color: azure; border: 1px solid black;'>" +
                 prompt +
                 "</td></tr>" +
                 "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
