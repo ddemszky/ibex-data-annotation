@@ -13,6 +13,7 @@ div.bar-container {
     border: 1px solid;
     border-color: #9ea4b1;
     background-color: white;
+    margin: auto;
 }
 div.bar {
     background-color: blue;
