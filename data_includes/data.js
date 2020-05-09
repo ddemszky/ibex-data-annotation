@@ -78,6 +78,12 @@ var items = [
     ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
 
     // my task
+    ["task", "AcceptabilityJudgment",
+        {
+            s: "hello mom.",
+            q: "Is this sentence correct?",
+            as: ["yes", "no"]
+        }],
     ["task", "Question", {q: "Is this sentence correct?"}],
     ["task", "Question", {q: "Is this sentence incorrect?"}],
 
@@ -109,55 +115,4 @@ var items = [
     [["q1",[200,2]], "AcceptabilityJudgment", {s: {html: "<b>Which struggling students</b> did the teacher encourage to succeed without treating their friends like idiots?"}}],
     [["q2",[200,2]], "AcceptabilityJudgment", {s: {html: "<b>Which struggling students</b> did the teacher encourage their friends to succeed without treating like idiots?"}}],
 
-    //
-    // 10 self-paced-reading filler sentences.
-    //
-
-    ["f", "DashedSentence", {s: "The foreign spy that encoded the top-secret messages was given a new mission that required going to Japan."},
-        "Question",       {q: "The spy's mission required him to:", as: ["Go to Japan", "Destroy top-secret messages", "Bug a hotel room"]}],
-
-    ["f", "DashedSentence", {s: "The receptionist that the real estate company just hired immediately familiarized herself with all the phone numbers of their clients."},
-        "Question",       {q: "The receptionist familiarized herself with:",
-        as: ["Some phone numbers",
-            "The health and safety regulations",
-            "Her boss"]}],
-
-    ["f", "DashedSentence", {s: "Only two specialized surgeons that work in the hospital could do this operation."},
-        "Question",       {q: "The operation can be performed by:",
-        as: ["Two surgeons with specialist training",
-            "All the surgeons at the hospital",
-            "Three surgeons who are currently off sick"]}],
-
-    ["f", "DashedSentence", {s: "The gangsters that the local police officers tracked for years were represented by an inexperienced lawyer."},
-        "Question",       {q: "Who did the inexperienced lawyer represent?",
-        as: ["Some gangsters", "Some local police officers", "A murder suspect"]}],
-
-    ["f", "DashedSentence", {s: "The woman that John had seen in the subway bought herself a pair of stunning shoes that cost a fortune."},
-        "Question",       {q: "Where did John see the woman?", as: ["In the subway", "On the bus", "In the shoe shop"]}],
-
-    ["f", "DashedSentence", {s: "If the award-winning chef had entered this competition, he surely would have won first prize."},
-        "Question",       {q: "Why didn't the chef win the competition?",
-        as: ["Because he didn't enter it",
-            "Because his food wasn't good enough.",
-            "Because he was kicked out for cheating."]}],
-
-    ["f", "DashedSentence", {s: "If the organized secretary had filed the documents when she first received them, they would have been easy to find."},
-        "Question",       {q: "Why were the documents difficult to find?",
-        as: ["Because the secretary hadn't filed them properly",
-            "Because a manager at the company had lost them",
-            "Because they had been stolen."]}],
-
-    ["f", "DashedSentence", {s: "If the homemade beer had been left to ferment more, it would have been drinkable."},
-        "Question",       {q: "Why wasn't the homemade beer drinkable?",
-        as: ["It hadn't been left to ferment long enough",
-            "It had been left to ferment too long",
-            "The ingredients had been measured incorrectly."]}],
-
-    ["f", "DashedSentence", {s: "The cowboy that the bulls tried to trample injured himself getting off a horse."}],
-
-    ["f", "DashedSentence", {s: "The patient that was admitted to the hospital last month still suffers severe pain in his left leg."},
-        "Question",       {q: "Which of the following is true?",
-        as: ["The patient still has severe pain in his left leg",
-            "The patient still has severe pain in his right leg",
-            "The patient no longer suffers from pain in his left leg"]}]
 ];
