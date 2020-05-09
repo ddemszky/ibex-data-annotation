@@ -81,7 +81,7 @@ var form_questions = "<p><b>Validity</b><br/>" +
 for (prompt of prompts) {
     items.push(
         ["task", "Form", {
-            html: "<div><p>" +
+            html: "<div><p class='prompt'>" +
                 prompt + "</p>" + form_questions + "</div>"
         }]
     );
