@@ -34,7 +34,7 @@ p.practice-box {
     text-align: center;
 }
 span.retry {
-    color: blue;
+    color: #777777;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -43,7 +43,7 @@ span.retry:hover {
     text-decoration: underline;
 }
 span.retry:visited {
-    color: blue;
+    color: #777777;
 }
 a.instructions {
     color: #008BFF;
