@@ -8,8 +8,8 @@ div {
 
 table {
     table-layout: fixed ;
-    width: 100% ;
+    width: 40em ;
 }
 td {
-    width: 10% ;
+    width: 4em ;
 }
