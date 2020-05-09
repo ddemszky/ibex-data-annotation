@@ -78,7 +78,7 @@ var prompts = ["<b>Student:</b> i was going to say that that's just like a ruler
 for (prompt of prompts) {
     items.push(
         ["task", "Form", {
-            html: "<table style='width: 40em; padding: 1em;'>" +
+            html: "<table>" +
                 "<tr><td colspan='3' style='width: 40em; padding: 1em; font-size: 16px; background-color: azure; border: 1px solid black;'>" +
                 prompt +
                 "</td></tr>" +
