@@ -2,3 +2,10 @@
     color: red;
     font-weight: bold;
 }
+div {
+    width: 40em;
+}
+
+p {
+    text-align: center;
+}
