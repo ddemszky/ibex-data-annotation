@@ -2,6 +2,8 @@
 //    sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var shuffleSequence = seq("intro", randomize("task"));
 var practiceItemTypes = ["practice"];
+var showProgressBar = true;
+var countsForProgressbard = true;
 
 var defaults = [
     "Separator", {
