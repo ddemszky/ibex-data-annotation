@@ -100,8 +100,8 @@ var teacher = ["a ruler for one inch?",
 
 
 
-for (var i = 0; i < data_entries.length; i++) {
-    row = data[i];
+for (var i = 0; i < 20; i++) {
+    row = data_entries[i];
     items.push(
         ["task", "Form", {
             html: "<table>" +
