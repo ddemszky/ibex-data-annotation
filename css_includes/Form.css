@@ -12,15 +12,15 @@ td {
     width: 4em ;
 }
 
-span.instructions {
+a.instructions {
     color: blue;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
-span.instructions:hover {
+a.instructions:hover {
     color: #B0DBFF;
 }
-span.instructions:visited {
+a.instructions:visited {
     color: blue;
 }
