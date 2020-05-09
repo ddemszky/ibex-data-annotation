@@ -5,11 +5,3 @@
 div {
     width: 40em;
 }
-
-p {
-    text-align: left;
-}
-
-p.prompt {
-     font-size: 100px;
- }
