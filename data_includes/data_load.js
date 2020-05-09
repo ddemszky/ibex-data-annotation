@@ -60,19 +60,26 @@ for (var i = 0; i < 20; i++) {
         ["task", "Form", {
             html: "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><a href='https://docs.google.com/document/d/1Kq1iWTqxLJFW284HfycpS2CGpwQefRbA32AoApzrDo0/edit' target='_blank'>Coding Instructions</a></td></tr>" +
-                "<tr style='background-color: azure;'>" +
-                "<td colspan='1' style='padding: .5em; font-size: 16px; font-weight: bold; border-top: 1px solid black; border-left: 1px solid black; border-right: 0px; border-bottom: 0px;'>" +
+                "<tr>" +
+                "<td colspan='10' style='border: 1px solid black; padding=1em;'>" +
+                "<table>" +
+                "<tr>" +
+                "<td colspan='1' style='padding: .5em;'>" +
                 "Student" +
                 "</td>" +
-                "<td colspan='9' style='padding: 1em; font-size: 16px; border-top: 1px solid black; border-right: 1px solid black; border-left: 0px; border-bottom: 0px;'>" +
+                "<td colspan='9' style='padding: .5em;'>" +
                 row["student"] +
                 "</td>" +
-                "<tr style='background-color: azure;'>" +
-                "<td colspan='1' style='padding: .5em; font-size: 16px; font-weight: bold; border-bottom: 1px solid black; border-left: 1px solid black; border-right: 0px; border-top: 0px;'>" +
+                "</tr>" +
+                "<tr>" +
+                "<td colspan='1' style='padding: .5em;'>" +
                 "Teacher" +
                 "</td>" +
-                "<td colspan='9' style='padding: 1em; font-size: 16px; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 0px; border-top: 0px;'>" +
+                "<td colspan='9' style='padding: .5em;'>" +
                 row["teacher"] +
+                "</td>" +
+                "</tr>" +
+                "</table>" +
                 "</td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +

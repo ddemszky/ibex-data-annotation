@@ -7,6 +7,7 @@ table {
     table-layout: fixed ;
     width: 40em ;
     text-align: left;
+    border-collapse: collapse;
 }
 td {
     width: 4em ;
