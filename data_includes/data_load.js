@@ -61,7 +61,7 @@ for (var i = 0; i < 20; i++) {
             html: "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><a href='https://docs.google.com/document/d/1Kq1iWTqxLJFW284HfycpS2CGpwQefRbA32AoApzrDo0/edit' target='_blank'>Coding Instructions</a></td></tr>" +
                 "<tr>" +
-                "<td colspan='10' style='border: 1px solid black; padding=1em;'>" +
+                "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                 "<table>" +
                 "<tr>" +
                 "<td colspan='1' style='width: 4em; padding: .5em;'>" +
@@ -87,15 +87,15 @@ for (var i = 0; i < 20; i++) {
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                 "<tr>" +
-                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">Low </label></td>" +
-                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">Mid </label></td>" +
-                "<td colspan='4'><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"backward\" /><label for=\"backward\">High </label></td>" +
+                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"low\" id=\"backward\" /><label for=\"backward\">Low </label></td>" +
+                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"mid\" id=\"backward\" /><label for=\"backward\">Mid </label></td>" +
+                "<td colspan='4'><input name=\"backward\" type=\"radio\" value=\"high\" id=\"backward\" /><label for=\"backward\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Use of Student Contribution</b><br/><i>To what degree does the teacher use the student’s contribution to make a mathematical point?</i></td></tr>" +
                 "<tr>" +
-                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">Low </label></td>" +
-                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">Mid </label></td>" +
-                "<td colspan='4'><input name=\"forward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"forward\" /><label for=\"forward\">High </label></td>" +
+                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"low\" id=\"forward\" /><label for=\"forward\">Low </label></td>" +
+                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"mid\" id=\"forward\" /><label for=\"forward\">Mid </label></td>" +
+                "<td colspan='4'><input name=\"forward\" type=\"radio\" value=\"high\" id=\"forward\" /><label for=\"forward\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b></td></tr>" +
                 "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
