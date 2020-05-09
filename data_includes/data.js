@@ -122,13 +122,20 @@ for (prompt of prompts) {
                 "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
                 "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
                 "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
+                "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Display of Active Listening<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
+                "</tr>" +
+                "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Use of Student Idea<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
                 "<tr>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan=\"3\">Comments?</td></tr>" +
-                "<tr><td colspan=\"3\"><textarea name=\"comments\" rows=\"5\" cols=\"3\"></textarea></td></tr>" +
+                "<tr><td colspan=\"3\"><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                 "</table>"
         }]
     );
