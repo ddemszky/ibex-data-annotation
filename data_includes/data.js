@@ -74,43 +74,6 @@ var prompts = ["<b>Student:</b> i was going to say that that's just like a ruler
     "<b>Student:</b> you can't because they're saying how much did student l spend for both items? both items. so they're saying you have to add those two 'cause spent like <cur>57.95 on a bike and <cur>12.65 on a helmet. and it's gonna be how much did she spend all together?<br/><b>Teacher:</b> it doesn't say all together, but that's the feeling. that's what you're thinking as you read this. you read enough of these problems. this is sounds like an all together problem. and all together is usually addition.",
     "<b>Student:</b> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30.<br/><b>Teacher:</b> awesome, very, very carefully, student b, help him carry that over to the cookie plate, and you may have to break it in half to get it to fit on the plate, and that's fine. we have to remember what we're doing, sitting properly. we're about to get in groups in just a minute. so her sister, amy, has more on. we're working backwards. and now tommy - student d, read about tommy.",
     "<b>Student:</b> yeah, but you repeated it on the --<br/><b>Teacher:</b> no, you should. that is why the rate is all right. you chose six thirds so this third -- this one is -- you have more. put it on that side. are you recording it somewhere in your journal? everybody should record it so that you have something to work with later on. record, record, record. why you doing that, student v? no. no, i want you to take your hand off because you are switching cards around. leave it there. don't do that. it's sneaky and i don't like it. pull out the card. once you pull it out put it on the center. the other one puts in on the center. move it fast. this one is what?",];
-var form_questions = "<p><b>Validity</b><br/>" +
-    "<i>If you check either of the boxes below, no need to code the example further.</i><br/>" +
-    "Check if the teacher's utterance is entirely off-task: <input type='checkbox' name='on_task'><br/>" +
-    "Check if the student does not present an opportunity for uptake: <input type='checkbox' name='student_idea'><br/></p>" +
-    "  <h1 class=\"likert-header\">This is a Likert Scale survey</h1>\n" +
-    "    <label class=\"statement\">Backward-looking</label>\n" +
-    "    <ul class='likert'>\n" +
-    "      <li>\n" +
-    "        <input type=\"radio\" name=\"backward\" value=\"low\">\n" +
-    "        <label>Low</label>\n" +
-    "      </li>\n" +
-    "      <li>\n" +
-    "        <input type=\"radio\" name=\"backward\" value=\"mid\">\n" +
-    "        <label>Mid</label>\n" +
-    "      </li>\n" +
-    "      <li>\n" +
-    "        <input type=\"radio\" name=\"backward\" value=\"high\">\n" +
-    "        <label>High</label>\n" +
-    "      </li>\n" +
-    "    </ul>\n" +
-    "    <label class=\"statement\">Forward-looking</label>\n" +
-"    <ul class='likert'>\n" +
-"      <li>\n" +
-"        <input type=\"radio\" name=\"foward\" value=\"low\">\n" +
-"        <label>Low</label>\n" +
-"      </li>\n" +
-"      <li>\n" +
-"        <input type=\"radio\" name=\"forward\" value=\"mid\">\n" +
-"        <label>Mid</label>\n" +
-"      </li>\n" +
-"      <li>\n" +
-"        <input type=\"radio\" name=\"forward\" value=\"high\">\n" +
-"        <label>High</label>\n" +
-"      </li>\n" +
-"    </ul>\n" +
-    "<p><b>Displaying Active Listening</b><br/> <input type='radio' name='backward' value='1'><input type='radio' name='backward' value='2'><input type='radio' name='backward' value='3'></p>" +
-    "<p><b>Using the Student's Contribution</b><br/> <input type='radio' name='forward' value='1'><input type='radio' name='forward' value='2'><input type='radio' name='forward' value='3'></p>"
 
 for (prompt of prompts) {
     items.push(
@@ -123,13 +86,13 @@ for (prompt of prompts) {
                 "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
                 "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
                 "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Display of Active Listening<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr>" +
+                "<tr style=\"padding-bottom: 1em;\">" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Use of Student Idea<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr>" +
+                "<tr style=\"padding-bottom: 1em;\">" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
                 "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
