@@ -3,6 +3,6 @@
     width: 40em;
 }
 
-.continue-link { text-decoration: none; color: blue; }
-.continue-link:hover { text-decoration: underline; color: blue; }
-.continue-link:visited { color: blue; }
+.continue-link { text-decoration: none; color: #777777; }
+.continue-link:hover { text-decoration: underline; color: #777777; }
+.continue-link:visited { color: #777777; }
