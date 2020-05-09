@@ -3,7 +3,7 @@
 var shuffleSequence = seq("intro", randomize("task"));
 var practiceItemTypes = ["practice"];
 var showProgressBar = true;
-var countsForProgressbard = true;
+var countsForProgressbar = true;
 
 var defaults = [
     "Separator", {
@@ -115,8 +115,21 @@ var form_questions = "<p><b>Validity</b><br/>" +
 for (prompt of prompts) {
     items.push(
         ["task", "Form", {
-            html: "<div><p class='prompt'>" +
-                prompt + "</p>" + form_questions + "</div>"
+            html: "<table>" +
+                "<tr><td colspan='3' style=\"width: 40em; padding-bottom: 1em;\">" +
+                prompt +
+                "</td></tr>" +
+                "<tr><td colspan='3' style=\"width: 30em; padding-bottom: 1em;\">Validity<br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
+                "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"off_task\" id=\"off_task\" /><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
+                "<tr><td colspan='3' style=\"padding-bottom: 1em;\"><input type=\"checkbox\" name=\"no_student_idea\" id=\"no_student_idea\" /><label for=\"no_student_idea\">No student idea.</label></td></tr>" +
+                "<tr>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"low\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Low </label></td>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"mid\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">Mid </label></td>" +
+                "<td><input name=\"backward\" type=\"radio\" value=\"high\" class=\"obligatory\" id=\"csexmale\" /><label for=\"csexmale\">High </label></td>" +
+                "</tr>" +
+                "<tr><td colspan=\"3\">Comments?</td></tr>" +
+                "<tr><td colspan=\"3\"><textarea name=\"comments\" rows=\"5\" cols=\"3\"></textarea></td></tr>" +
+                "</table>"
         }]
     );
 }
