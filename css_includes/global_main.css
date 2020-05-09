@@ -16,7 +16,7 @@ div.bar-container {
     margin: auto;
 }
 div.bar {
-    background-color: blue;
+    background-color: #58D376;
 }
 p.progress-text {
     padding-top: 0.5em;
@@ -46,7 +46,7 @@ span.retry:visited {
     color: blue;
 }
 a.instructions {
-    color: #171FBC;
+    color: #008BFF;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -55,5 +55,5 @@ a.instructions:hover {
     color: #B0DBFF;
 }
 a.instructions:visited {
-    color: #171FBC;
+    color: #008BFF;
 }
