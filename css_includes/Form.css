@@ -2,13 +2,11 @@
     color: red;
     font-weight: bold;
 }
-div {
-    width: 40em;
-}
 
 table {
     table-layout: fixed ;
     width: 40em ;
+    text-align: left;
 }
 td {
     width: 4em ;
