@@ -51,7 +51,6 @@ define_ibex_controller({
             function handleClick(dom) {
                 return function (e) {
 
-                    console.log("hello")
                     var answerTime = new Date().getTime();
 
                     e.preventDefault();
@@ -172,7 +171,13 @@ define_ibex_controller({
             }
 
             this.creationTime = new Date().getTime();
+
+
+            $("#off_task").on("change",function() {
+                console.log(this.value);
+            });
         }
+
     },
 
     properties: {
