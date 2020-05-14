@@ -54,7 +54,7 @@ var items = [
 ];
 
 
-for (var i = 60; i < 80; i++) {
+for (var i = 20; i < 40; i++) {
     row = data_entries[i];
     items.push(
         ["task", "Form", {
