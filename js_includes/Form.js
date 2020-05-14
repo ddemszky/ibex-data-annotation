@@ -104,7 +104,7 @@ define_ibex_controller({
                             ["Field value", check.attr('checked') ? t.checkedValue : t.uncheckedValue]]);
                     }
 
-                    var rads = $(dom).find("input[type=radio]");
+                    var rads = $(dom).find("input[type=radio]:visible");
                     // Sort by name.
                     var rgs = { };
                     for (var i = 0; i < rads.length; ++i) {
@@ -135,7 +135,7 @@ define_ibex_controller({
                             alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
-                        if (condOblig && (! oneIsSelected) && (! example_invalid) && rgs[k].is(":visible")) {
+                        if (condOblig && (! oneIsSelected) && (! example_invalid)) {
                             alertOrAddError(rgs[k][0].attr('name'), t.conditionalErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
