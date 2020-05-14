@@ -173,7 +173,7 @@ define_ibex_controller({
             this.creationTime = new Date().getTime();
 
 
-            $("#off_task").on("change",function() {
+            $("#off_task").bind("change",function() {
                 console.log(this.value);
             });
         }
