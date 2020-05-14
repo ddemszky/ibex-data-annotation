@@ -173,8 +173,6 @@ define_ibex_controller({
 
             this.creationTime = new Date().getTime();
 
-            $("#follow_up").hide();
-
 
             $("#teacher_on_task").bind("change",function() {
                 console.log();
