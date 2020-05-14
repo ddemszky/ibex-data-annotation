@@ -184,8 +184,8 @@ define_ibex_controller({
                     $(".item2").show();
                 }
             });
-            $("#active_listening").bind("change",function() {
-                console.log($("#active_listening").filter(":checked").val());
+            $(dom).find("input[name=active_listening]").bind("change",function() {
+                console.log($('input[name=active_listening]:checked').val());
             });
 
         }
