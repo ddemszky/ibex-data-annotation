@@ -59,7 +59,7 @@ for (var i = 20; i < 40; i++) {
     items.push(
         ["task", "Form", {
             html: "<table>" +
-                "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1Kq1iWTqxLJFW284HfycpS2CGpwQefRbA32AoApzrDo0/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
+                "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1UGAXW3H-bV1m0PWcDM7aGcRgkdrY-fovcPstB4YphvA/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
                 "<tr>" +
                 "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                 "<table>" +
