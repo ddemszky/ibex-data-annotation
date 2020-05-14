@@ -96,7 +96,7 @@ define_ibex_controller({
                             alertOrAddError(check.attr('name'), t.obligatoryCheckboxErrorGenerator(check.attr('name')));
                             return;
                         }
-                        if (check.attr('checked') && check.hasClass('validity')) {
+                        if (! check.attr('checked') && check.hasClass('validity')) {
                             example_invalid = true;
                         }
 
@@ -179,6 +179,15 @@ define_ibex_controller({
                     $(".item2").show();
                 }
             });
+            $("#student_on_task").bind("change",function() {
+                if ($("#student_on_task").attr('checked') && $("#teacher_on_task").attr('checked')) {
+                    $(".item2").show();
+                }
+            });
+            $("#active_listening").bind("change",function() {
+                console.log($("#active_listening").filter(":checked").val());
+            });
+
         }
 
     },
