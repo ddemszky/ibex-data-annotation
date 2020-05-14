@@ -174,7 +174,7 @@ define_ibex_controller({
 
 
             $("#off_task").bind("change",function() {
-                console.log(this.value);
+                console.log($("#off_task").value);
             });
         }
 
