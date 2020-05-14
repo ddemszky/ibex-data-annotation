@@ -135,7 +135,7 @@ define_ibex_controller({
                             alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
-                        if (condOblig && (! oneIsSelected) && (! example_invalid)) {
+                        if (condOblig && (! oneIsSelected) && (! example_invalid) && rgs[k].is(":visible")) {
                             alertOrAddError(rgs[k][0].attr('name'), t.conditionalErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
@@ -185,7 +185,10 @@ define_ibex_controller({
                 }
             });
             $(dom).find("input[name=active_listening]").bind("change",function() {
-                console.log($('input[name=active_listening]:checked').val());
+                var val = $('input[name=active_listening]:checked').val();
+                if ((val == "mid") || (val == "high")) {
+                    $(".item3").show();
+                }
             });
 
         }
