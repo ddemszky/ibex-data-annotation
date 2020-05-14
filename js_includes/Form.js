@@ -163,8 +163,6 @@ define_ibex_controller({
             var handler = handleClick(dom);
 
             this.element.append(dom);
-            $("#active_listening").hide();
-            $("#follow_up").hide();
 
 
             if (this.continueMessage) {
@@ -174,6 +172,8 @@ define_ibex_controller({
             }
 
             this.creationTime = new Date().getTime();
+
+            $("#follow_up").hide();
 
 
             $("#teacher_on_task").bind("change",function() {
