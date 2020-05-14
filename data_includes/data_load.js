@@ -82,20 +82,20 @@ for (var i = 0; i < 20; i++) {
                 "</table>" +
                 "</td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If you check either of the boxes below, no need to code the example further.</i></td></tr>" +
-                "<tr><td colspan='10'><input type=\"checkbox\" name=\"off_task\" id='off_task' class='validity'/><label for=\"off_task\">Teacher utterance is off task.</label></td></tr>" +
-                "<tr><td colspan='10'><input type=\"checkbox\" name=\"no_student_idea\" id='no_student_idea' class='validity'/><label for=\"no_student_idea\">Student doesn't present an idea.</label></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b></td></tr>" +
+                "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance is on-task.</label></td></tr>" +
+                "<tr><td colspan='10'><input type=\"checkbox\" name=\"student_on_task\" id='student_on_task' class='validity'/><label for=\"student_on_task\">Student utterance is on-task.</label></td></tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                 "<tr>" +
-                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"low\" id=\"backward\" class='condOblig'/><label for=\"backward\">Low </label></td>" +
-                "<td colspan='3'><input name=\"backward\" type=\"radio\" value=\"mid\" id=\"backward\" class='condOblig'/><label for=\"backward\">Mid </label></td>" +
-                "<td colspan='4'><input name=\"backward\" type=\"radio\" value=\"high\" id=\"backward\" class='condOblig'/><label for=\"backward\">High </label></td>" +
+                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"low\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">Low </label></td>" +
+                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"mid\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">Mid </label></td>" +
+                "<td colspan='4'><input name=\"active_listening\" type=\"radio\" value=\"high\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Use of Student Contribution</b><br/><i>To what degree does the teacher use the student’s contribution to make a mathematical point?</i></td></tr>" +
                 "<tr>" +
-                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"low\" id=\"forward\" class='condOblig'/><label for=\"forward\">Low </label></td>" +
-                "<td colspan='3'><input name=\"forward\" type=\"radio\" value=\"mid\" id=\"forward\" class='condOblig'/><label for=\"forward\">Mid </label></td>" +
-                "<td colspan='4'><input name=\"forward\" type=\"radio\" value=\"high\" id=\"forward\" class='condOblig'/><label for=\"forward\">High </label></td>" +
+                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"low\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">Low </label></td>" +
+                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"mid\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">Mid </label></td>" +
+                "<td colspan='4'><input name=\"follow_up\" type=\"radio\" value=\"high\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">High </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b></td></tr>" +
                 "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +

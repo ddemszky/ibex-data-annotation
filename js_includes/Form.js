@@ -163,6 +163,9 @@ define_ibex_controller({
             var handler = handleClick(dom);
 
             this.element.append(dom);
+            $("#active_listening").hide();
+            $("#follow_up").hide();
+
 
             if (this.continueMessage) {
                 this.element.append($("<p>").append($("<a>").attr('href', '').text("\u2192 " + this.continueMessage)
@@ -173,8 +176,8 @@ define_ibex_controller({
             this.creationTime = new Date().getTime();
 
 
-            $("#off_task").bind("change",function() {
-                console.log($("#off_task").value);
+            $("#teacher_on_task").bind("change",function() {
+                console.log();
             });
         }
 
