@@ -82,7 +82,7 @@ for (var i = 0; i < 20; i++) {
                 "</table>" +
                 "</td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>Please mark these boxes to continue coding the example.</i></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance is on-task.</label></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"student_on_task\" id='student_on_task' class='validity'/><label for=\"student_on_task\">Student utterance is on-task.</label></td></tr>" +
                 "<tr class='item2' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +

@@ -175,7 +175,9 @@ define_ibex_controller({
 
 
             $("#teacher_on_task").bind("change",function() {
-                console.log();
+                if ($("#student_on_task").attr('checked') && $("#teacher_on_task").attr('checked')) {
+                    $(".item2").show();
+                }
             });
         }
 
