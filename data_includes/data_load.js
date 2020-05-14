@@ -91,7 +91,7 @@ for (var i = 0; i < 20; i++) {
                 "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"mid\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">Mid </label></td>" +
                 "<td colspan='4'><input name=\"active_listening\" type=\"radio\" value=\"high\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">High </label></td>" +
                 "</tr>" +
-                "<tr class='item3' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Type of Follow-Up</b><br/><i>Since you selected 'Mid' or 'High' for Item 2, please select the type of follow-up prompt the teacher made.</i></td></tr>" +
+                "<tr class='item3' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Type of Follow-Up</b><br/><i>Since you selected 'Mid' or 'High' for Item 2, please select the type of follow-up prompt.</i></td></tr>" +
                 "<tr class='item3' style='display: none;'>" +
                 "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"none\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">No follow-up prompt </label></td>" +
                 "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"funnel\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">Funneling </label></td>" +
