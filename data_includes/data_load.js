@@ -72,11 +72,6 @@ for (var i = 0; i < data_entries.length; i++) {
                 "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                 "<table>" +
                 "<tr>" +
-                "<td colspan='10' style='width: 4em; padding: .5em;'>" +
-                "<b>Example " + index + "</b>" +
-                "</td>" +
-                "</tr>" +
-                "<tr>" +
                 "<td colspan='1' style='width: 4em; padding: .5em;'>" +
                 "Student" +
                 "</td>" +
