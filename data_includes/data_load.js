@@ -53,13 +53,14 @@ var items = [
     } ],
 ];
 
-
+var index = 0;
 for (var i = 0; i < data_entries.length; i++) {
     row = data_entries[i];
     items.push(
         ["task", "Form", {
             html:
                 "<div style='display: none;'>" +
+                "<input type='text' name='uidx' value='" + row["uidx"] + "'>"+
                 "<input type='text' name='obs_id' value='" + row["obs_id"] + "'>"+
                 "<input type='text' name='exchange_idx' value='" + row["exchange_idx"] + "'>"+
                 "<input type='text' name='student_text' value='" + row["student"] + "'>"+
@@ -70,6 +71,11 @@ for (var i = 0; i < data_entries.length; i++) {
                 "<tr>" +
                 "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                 "<table>" +
+                "<tr>" +
+                "<td colspan='10' style='width: 4em; padding: .5em;'>" +
+                "<b>Example " + index + "</b>" +
+                "</td>" +
+                "</tr>" +
                 "<tr>" +
                 "<td colspan='1' style='width: 4em; padding: .5em;'>" +
                 "Student" +
@@ -109,4 +115,5 @@ for (var i = 0; i < data_entries.length; i++) {
                 "</table>"
         }],
     );
+    index = index +1;
 }
