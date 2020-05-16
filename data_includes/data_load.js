@@ -60,10 +60,10 @@ for (var i = 0; i < data_entries.length; i++) {
         ["task", "Form", {
             html:
                 "<div style='display: none;'>" +
-                "<input name='obs_id' value='" + row["obs_id"] + "'>"+
-                "<input name='exchange_idx' value='" + row["exchange_idx"] + "'>"+
-                "<input name='student_text' value='" + row["student"] + "'>"+
-                "<input name='teacher_text' value='" + row["teacher"] + "'>"+
+                "<input type='text' name='obs_id' value='" + row["obs_id"] + "'>"+
+                "<input type='text' name='exchange_idx' value='" + row["exchange_idx"] + "'>"+
+                "<input type='text' name='student_text' value='" + row["student"] + "'>"+
+                "<input type='text' name='teacher_text' value='" + row["teacher"] + "'>"+
                 "</div>" +
                 "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1UGAXW3H-bV1m0PWcDM7aGcRgkdrY-fovcPstB4YphvA/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
