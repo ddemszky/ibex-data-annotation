@@ -15,7 +15,7 @@ var defaults = [
         hideProgressBar: false,
         countsForProgressbard: true,
         continueOnReturn: true,
-        saveReactionTime: true
+        saveReactionTime: false
     }
 ];
 
@@ -58,7 +58,14 @@ for (var i = 20; i < 40; i++) {
     row = data_entries[i];
     items.push(
         ["task", "Form", {
-            html: "<table>" +
+            html:
+                "<div style='display: none;'>" +
+                "<input name='obs_id' value='" + row["obs_id"] + "'>"+
+                "<input name='exchange_idx' value='" + row["exchange_idx"] + "'>"+
+                "<input name='student_text' value='" + row["student"] + "'>"+
+                "<input name='teacher_text' value='" + row["teacher"] + "'>"+
+                "</div>" +
+                "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1UGAXW3H-bV1m0PWcDM7aGcRgkdrY-fovcPstB4YphvA/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
                 "<tr>" +
                 "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
@@ -83,19 +90,19 @@ for (var i = 20; i < 40; i++) {
                 "</td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If any of the conditions below is not met, you can stop coding the example.</i></td></tr>" +
-                "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance is on-task.</label></td></tr>" +
                 "<tr><td colspan='10'><input type=\"checkbox\" name=\"student_on_task\" id='student_on_task' class='validity'/><label for=\"student_on_task\">Student utterance is on-task.</label></td></tr>" +
+                "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance is on-task.</label></td></tr>" +
                 "<tr class='item2' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                 "<tr class='item2' style='display: none;'>" +
-                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"low\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">Low </label></td>" +
-                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"mid\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">Mid </label></td>" +
-                "<td colspan='4'><input name=\"active_listening\" type=\"radio\" value=\"high\" id=\"active_listening\" class='condOblig'/><label for=\"active_listening\">High </label></td>" +
+                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"low\" id=\"active_listening\"/><label for=\"active_listening\">Low </label></td>" +
+                "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"mid\" id=\"active_listening\"/><label for=\"active_listening\">Mid </label></td>" +
+                "<td colspan='4'><input name=\"active_listening\" type=\"radio\" value=\"high\" id=\"active_listening\"/><label for=\"active_listening\">High </label></td>" +
                 "</tr>" +
                 "<tr class='item3' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>3. Type of Follow-Up</b><br/><i>Since you selected 'Mid' or 'High' for Item 2, please select the type of follow-up prompt.</i></td></tr>" +
                 "<tr class='item3' style='display: none;'>" +
-                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"none\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">No follow-up prompt </label></td>" +
-                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"funnel\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">Funneling </label></td>" +
-                "<td colspan='4'><input name=\"follow_up\" type=\"radio\" value=\"focus\" id=\"follow_up\" class='condOblig'/><label for=\"follow_up\">Focusing </label></td>" +
+                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"none\" id=\"follow_up\"/><label for=\"follow_up\">No follow-up prompt </label></td>" +
+                "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"funnel\" id=\"follow_up\"/><label for=\"follow_up\">Funneling </label></td>" +
+                "<td colspan='4'><input name=\"follow_up\" type=\"radio\" value=\"focus\" id=\"follow_up\"/><label for=\"follow_up\">Focusing </label></td>" +
                 "</tr>" +
                 "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b></td></tr>" +
                 "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +

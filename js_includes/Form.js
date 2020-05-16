@@ -26,9 +26,6 @@ define_ibex_controller({
             this.obligatoryRadioErrorGenerator =
                 dget(this.options, "obligatoryRadioErrorGenerator",
                     function (field) { return "You must select an option for \u2018" + field + "\u2019."; });
-            this.conditionalErrorGenerator =
-                dget(this.options, "conditionalErrorGenerator",
-                    function (field) { return "If the example is valid, you must select an option for \u2018" + field + "\u2019."; });
 
             var t = this;
 
@@ -118,13 +115,11 @@ define_ibex_controller({
                     for (k in rgs) {
                         // Check if it's oblig.
                         var oblig = false;
-                        var condOblig = false;
                         var oneIsSelected = false;
                         var oneThatWasSelected;
                         var val;
                         for (var i = 0; i < rgs[k].length; ++i) {
                             if (rgs[k][i].hasClass('obligatory')) oblig = true;
-                            if (rgs[k][i].hasClass('condOblig')) condOblig = true;
                             if (rgs[k][i].attr('checked')) {
                                 oneIsSelected = true;
                                 oneThatWasSelected = i;
@@ -135,8 +130,12 @@ define_ibex_controller({
                             alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
                             return;
                         }
-                        if (condOblig && (! oneIsSelected) && (! example_invalid)) {
-                            alertOrAddError(rgs[k][0].attr('name'), t.conditionalErrorGenerator(rgs[k][0].attr('name')));
+                        if ((rgs[k][0].attr('name') === "active_listening") && (! oneIsSelected) && (! example_invalid)) {
+                            alert("Since the example is valid, you must select an option for Question 2.");
+                            return;
+                        }
+                        if ((rgs[k][0].attr('name') === "follow_up") && (! oneIsSelected) && ($('input[name=active_listening]:checked').val() !== "low")) {
+                            alert("Since you selected 'Mid' or 'High' for Question 2, you must select an option for Question 3.");
                             return;
                         }
                         if (oneIsSelected) {
