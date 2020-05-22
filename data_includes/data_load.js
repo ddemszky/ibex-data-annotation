@@ -117,7 +117,7 @@ for (var i = 0; i < data_entries.length; i++) {
                 "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"funnel\" id=\"follow_up\"/><label for=\"follow_up\">Funneling </label></td>" +
                 "<td colspan='4'><input name=\"follow_up\" type=\"radio\" value=\"focus\" id=\"follow_up\"/><label for=\"follow_up\">Focusing </label></td>" +
                 "</tr>" +
-                "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b></td></tr>" +
+                "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b> (optional, only add if necessary)</td></tr>" +
                 "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                 "</table>"
         }],
