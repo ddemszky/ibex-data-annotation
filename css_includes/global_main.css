@@ -68,12 +68,13 @@ a.instructions:visited {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
+    width: 200px;
+    background-color: #dcf7ff;
+    color: black;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
+    border: 1px solid #1b5496;
 
     /* Position the tooltip text - see examples below! */
     position: absolute;
