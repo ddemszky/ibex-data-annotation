@@ -68,7 +68,7 @@ a.instructions:visited {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 200px;
+    width: 50em;
     background-color: #fff;
     color: #163871;
     text-align: center;
