@@ -70,11 +70,11 @@ a.instructions:visited {
     visibility: hidden;
     width: 200px;
     background-color: #dcf7ff;
-    color: black;
+    color: #0b3696;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    border: 1px solid #1b5496;
+    border: 1px solid  #0b3696;
 
     /* Position the tooltip text - see examples below! */
     position: absolute;
