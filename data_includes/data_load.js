@@ -76,6 +76,13 @@ for (var i = 0; i < data_entries.length; i++) {
                 "</td>" +
                 "</tr>" +
                 "<tr>" +
+                "<td colspan='10' style='width: 40em; padding: .5em;'>" +
+                "<div class='tooltip'>Conversation history" +
+                "<span class='tooltiptext'>"+ row["history"] +"</span>" +
+                "</div>" +
+                "</td>" +
+                "</tr>" +
+                "<tr>" +
                 "<td colspan='1' style='width: 4em; padding: .5em;'>" +
                 "Student" +
                 "</td>" +
