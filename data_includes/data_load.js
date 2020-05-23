@@ -53,6 +53,24 @@ var items = [
     } ],
 ];
 
+var name2data = {
+    'Courteney Simchak': courteney,
+    'Monica Wood': monica,
+    'Keith Schwacha': keith,
+    'Justin Hancock': justin,
+    'Mariah Green': mariah,
+    'Shannon Sweeny': shannon,
+    'Carol DeFreese': carol,
+    'Max Altman': max,
+    'Chris Kuzdzal': chris,
+    'Lisa Jones': lisa,
+    'Helen Ommen': helen,
+    'Kelsey Kinsella': kelsey,
+    'Cassie Liston': cassie,
+};
+var data_entries = null;
+
+
 var index = 0;
 for (var i = 0; i < data_entries.length; i++) {
     row = data_entries[i];
