@@ -125,7 +125,7 @@ for (var j = 0; j < data_names.length; j++) {
                     "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                     "</table>"
             });
-        console.log(j, new_item.length);
-        items.push(new_item);
     }
+    items.push(new_item);
+    console.log(j, new_item.length /2);
 }
