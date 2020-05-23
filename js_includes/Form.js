@@ -193,13 +193,11 @@ define_ibex_controller({
             });
 
             console.log(__counter_value_from_server__);
-            if (__counter_value_from_server__ > 2){
+            if (__counter_value_from_server__ > 12){
                 alert("Something is wrong with the random assignment. Please email Dora asap.");
                 return;
             }
-
         }
-
     },
 
     properties: {
