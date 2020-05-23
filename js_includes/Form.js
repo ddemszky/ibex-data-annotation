@@ -70,16 +70,6 @@ define_ibex_controller({
                             return;
                         }
 
-                        if (inp.attr('name') === "Name") {
-                            if (!inp.attr('value') in name2data) {
-                                alert("Please check if you typed your (full) name correctly.");
-                                return;
-                            }
-                            else {
-                                var data_entries = name2data[inp.attr('name')];
-                            }
-                        }
-
                         if (t.validators[inp.attr('name')]) {
                             var er = t.validators[inp.attr('name')](inp.attr('value'));
                             if (typeof(er) == "string") {
