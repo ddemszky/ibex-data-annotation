@@ -53,7 +53,7 @@ var items = [
     } ],
 ];
 
-var data_names = [courteney, monica, keith, justin, mariah, shannon, carol, max, chris, lisa, helen, kelsey, cassie];
+var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
 for (var j = 0; j < data_names.length; j++) {
     data_entries = data_names[j];
