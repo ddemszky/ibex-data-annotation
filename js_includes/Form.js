@@ -179,10 +179,18 @@ define_ibex_controller({
                 if ($("#student_on_task").attr('checked') && $("#teacher_on_task").attr('checked')) {
                     $(".item2").show();
                 }
+                if (!$("#student_on_task").attr('checked') && !$("#teacher_on_task").attr('checked')) {
+                    $(".item2").hide();
+                    $(".item3").hide();
+                }
             });
             $("#student_on_task").bind("change",function() {
                 if ($("#student_on_task").attr('checked') && $("#teacher_on_task").attr('checked')) {
                     $(".item2").show();
+                }
+                if (!$("#student_on_task").attr('checked') && !$("#teacher_on_task").attr('checked')) {
+                    $(".item2").hide();
+                    $(".item3").hide();
                 }
             });
             $(dom).find("input[name=active_listening]").bind("change",function() {
