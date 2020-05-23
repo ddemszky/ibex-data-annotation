@@ -1,6 +1,6 @@
 //var shuffleSequence = seq("intro",
 //    sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
-var shuffleSequence = seq("intro", seq("task"));
+var shuffleSequence = seq("setcounter", "intro", "task");
 var practiceItemTypes = ["practice"];
 var showProgressBar = true;
 var countsForProgressbar = true;
@@ -40,7 +40,7 @@ var items = [
     // an 'inc' option, the counter is incremented by the specified amount. If given a 'set' option,
     // the counter is set to the given number. (E.g., { set: 100 }, { inc: -1 })
     //
-    //["setcounter", "__SetCounter__", { }],
+    ["setcounter", "__SetCounter__", { }],
 
     // NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
     // consent checkbox).
