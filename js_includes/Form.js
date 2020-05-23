@@ -5,6 +5,11 @@ define_ibex_controller({
 
     jqueryWidget: {
         _init: function () {
+
+            if (counter > 2){
+                alert("Something is wrong with the random assignment. Please email Dora asap.");
+            }
+
             this.cssPrefix = this.options._cssPrefix;
             this.finishedCallback = this.options._finishedCallback;
             this.utils = this.options._utils;
