@@ -1,6 +1,6 @@
 //var shuffleSequence = seq("intro",
 //    sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
-var shuffleSequence = seq("intro", "setcounter", "task");
+var shuffleSequence = seq("intro", "task");
 var practiceItemTypes = ["practice"];
 var showProgressBar = true;
 var countsForProgressbar = true;
