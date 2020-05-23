@@ -198,6 +198,9 @@ define_ibex_controller({
                 if ((val == "mid") || (val == "high")) {
                     $(".item3").show();
                 }
+                if (val == "low") {
+                    $(".item3").hide();
+                }
             });
 
             console.log(__counter_value_from_server__);
