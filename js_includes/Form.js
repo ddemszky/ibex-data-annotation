@@ -6,14 +6,14 @@ define_ibex_controller({
     jqueryWidget: {
         _init: function () {
 
-            if (counter > 2){
-                alert("Something is wrong with the random assignment. Please email Dora asap.");
-                return;
-            }
 
             this.cssPrefix = this.options._cssPrefix;
             this.finishedCallback = this.options._finishedCallback;
             this.utils = this.options._utils;
+            if (counter > 2){
+                alert("Something is wrong with the random assignment. Please email Dora asap.");
+                return;
+            }
 
             this.html = dget(this.options, "html");
             this.continueOnReturn = dget(this.options, "continueOnReturn", false);
