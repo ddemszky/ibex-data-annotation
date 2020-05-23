@@ -56,6 +56,8 @@ var items = [
 var index = 0;
 for (var i = 0; i < data_entries.length; i++) {
     row = data_entries[i];
+    student = row["student"].replace(/'/g, "\\'");
+    teacher = row["teacher"].replace(/'/g, "\\'");
     items.push(
         ["task", "Form", {
             html:
@@ -63,8 +65,8 @@ for (var i = 0; i < data_entries.length; i++) {
                 "<input type='text' name='uidx' value='" + row["uidx"] + "'>"+
                 "<input type='text' name='obs_id' value='" + row["obs_id"] + "'>"+
                 "<input type='text' name='exchange_idx' value='" + row["exchange_idx"] + "'>"+
-                "<input type='text' name='student_text' value='" + row["student"] + "'>"+
-                "<input type='text' name='teacher_text' value='" + row["teacher"] + "'>"+
+                "<input type='text' name='student_text' value='" + student + "'>"+
+                "<input type='text' name='teacher_text' value='" + teacher + "'>"+
                 "</div>" +
                 "<table>" +
                 "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1UGAXW3H-bV1m0PWcDM7aGcRgkdrY-fovcPstB4YphvA/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
@@ -78,7 +80,7 @@ for (var i = 0; i < data_entries.length; i++) {
                 "<tr>" +
                 "<td colspan='10' style='width: 40em; padding: .5em;'>" +
                 "<div class='tooltip'>Conversation history" +
-                "<span class='tooltiptext'>"+ row["hist_2"] + "<br>" + row["hist_3"] +
+                "<span class='tooltiptext'>"+ row["hist_2"].replace(/'/g, "\\'") + "<br>" + row["hist_3"].replace(/'/g, "\\'") +
                 "</span>" +
                 "</div>" +
                 "</td>" +
@@ -88,7 +90,7 @@ for (var i = 0; i < data_entries.length; i++) {
                 "Student" +
                 "</td>" +
                 "<td colspan='9' style='padding: .5em;'>" +
-                row["student"] +
+                student +
                 "</td>" +
                 "</tr>" +
                 "<tr>" +
@@ -96,7 +98,7 @@ for (var i = 0; i < data_entries.length; i++) {
                 "Teacher" +
                 "</td>" +
                 "<td colspan='9' style='padding: .5em;'>" +
-                row["teacher"] +
+                teacher +
                 "</td>" +
                 "</tr>" +
                 "</table>" +
