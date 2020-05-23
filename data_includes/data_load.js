@@ -64,6 +64,7 @@ for (var j = 0; j < data_names.length; j++) {
         new_item.push({
                 html:
                     "<div style='display: none;'>" +
+                    "<input type='text' name='data_id' value='" + j.toString() + "'>" +
                     "<input type='text' name='uidx' value='" + row["uidx"] + "'>" +
                     "<input type='text' name='obs_id' value='" + row["obs_id"] + "'>" +
                     "<input type='text' name='exchange_idx' value='" + row["exchange_idx"] + "'>" +
