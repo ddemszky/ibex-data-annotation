@@ -8,6 +8,7 @@ define_ibex_controller({
 
             if (counter > 2){
                 alert("Something is wrong with the random assignment. Please email Dora asap.");
+                return;
             }
 
             this.cssPrefix = this.options._cssPrefix;
