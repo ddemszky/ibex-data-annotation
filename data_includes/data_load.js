@@ -55,7 +55,7 @@ var items = [
 
 var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
-var done_data = [0,1,2,6,7,10];
+var done_data = [0,1,2,4,6,7,10];
 for (var j = 0; j < data_names.length; j++) {
     if (done_data.includes(j)){
         console.log(j);
