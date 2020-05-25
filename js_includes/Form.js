@@ -6,7 +6,7 @@ define_ibex_controller({
     jqueryWidget: {
         _init: function () {
 
-            var num_raters = 12;
+            var num_raters = 0;
 
             this.cssPrefix = this.options._cssPrefix;
             this.finishedCallback = this.options._finishedCallback;
@@ -61,11 +61,11 @@ define_ibex_controller({
 
                     var rlines = [];
 
-                    /* console.log(__counter_value_from_server__);
+                     console.log(__counter_value_from_server__);
                     if (__counter_value_from_server__ > num_raters){
                         alert("Something is wrong with the random assignment. Please email Dora asap.");
                         return;
-                    } */
+                    };
 
                     var inps = $(dom).find("input[type=text]");
                     var tas = $(dom).find("textarea");
@@ -210,11 +210,11 @@ define_ibex_controller({
                 }
             });
 
-            /* console.log(__counter_value_from_server__);
+            console.log(__counter_value_from_server__);
             if (__counter_value_from_server__ > num_raters){
                 alert("Something is wrong with the random assignment. Please email Dora asap.");
                 return;
-            } */
+            };
         }
     },
 
