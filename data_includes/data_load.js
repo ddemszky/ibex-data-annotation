@@ -55,7 +55,12 @@ var items = [
 
 var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
+var done_data = [0,1,2,6,7];
 for (var j = 0; j < data_names.length; j++) {
+    if (done_data.includes(j)){
+        console.log(j);
+        continue;
+    }
     data_entries = data_names[j];
     var new_item = [["task", 1]];
     for (var i = 0; i < data_entries.length; i++) {
