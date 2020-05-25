@@ -6,7 +6,7 @@ define_ibex_controller({
     jqueryWidget: {
         _init: function () {
 
-            var num_raters = 0;
+            var num_raters = 30;
 
             this.cssPrefix = this.options._cssPrefix;
             this.finishedCallback = this.options._finishedCallback;
