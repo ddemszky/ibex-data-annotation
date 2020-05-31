@@ -55,17 +55,12 @@ var items = [
 
 var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
 
-var done_data = [0,1,2,4,6,7,8,9,10,12];
-// missing data
-// square 0: 3
-// square 1: 5
-// square 2: 8
-// square 4: 11
+
 for (var j = 0; j < data_names.length; j++) {
-    if (done_data.includes(j)){
-        console.log(j);
-        continue;
-    }
+    //if (done_data.includes(j)){
+    //    console.log(j);
+    //    continue;
+    //}
     data_entries = data_names[j];
     var new_item = [["task", 1]];
     for (var i = 0; i < data_entries.length; i++) {
