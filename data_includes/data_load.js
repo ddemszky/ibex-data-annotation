@@ -53,8 +53,8 @@ var items = [
     } ],
 ];
 
-//var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
-var data_names = [dataChris, dataCourteney, dataJustin, dataKeith, dataShannon];
+var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+//var data_names = [dataChris, dataCourteney, dataJustin, dataKeith, dataShannon];
 
 
 for (var j = 0; j < data_names.length; j++) {
@@ -128,7 +128,7 @@ for (var j = 0; j < data_names.length; j++) {
                     "<td colspan='3'><input name=\"follow_up\" type=\"radio\" value=\"funnel\" id=\"follow_up\"/><label for=\"follow_up\">Funneling </label></td>" +
                     "<td colspan='4'><input name=\"follow_up\" type=\"radio\" value=\"focus\" id=\"follow_up\"/><label for=\"follow_up\">Focusing </label></td>" +
                     "</tr>" +
-                    "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b><br><i>Optional, only add if necessary.</i></td></tr>" +
+                    "<tr><td colspan='10' style='padding-top: 1em;'><b>4. Comments?</b><br><i>Optional. Write 'ambiguous' if you found this example difficult to rate.</i></td></tr>" +
                     "<tr><td colspan='10'><textarea name=\"comments\" rows=\"5\" cols=\"40\"></textarea></td></tr>" +
                     "</table>"
             });

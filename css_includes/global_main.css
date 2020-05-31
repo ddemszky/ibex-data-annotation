@@ -79,6 +79,10 @@ a.instructions:visited {
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20em; /* Use half of the width (120/2 = 60), to center the tooltip */
+
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
