@@ -53,7 +53,8 @@ var items = [
     } ],
 ];
 
-var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+//var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+var data_names = [dataChris, dataCourteney, dataJustin, dataKeith, dataShannon];
 
 
 for (var j = 0; j < data_names.length; j++) {
