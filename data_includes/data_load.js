@@ -78,7 +78,7 @@ for (var j = 0; j < data_names.length; j++) {
                     "<input type='text' name='teacher_text' value='" + row["teacher"].replace(/'/g, "\u2019") + "'>" +
                     "</div>" +
                     "<table>" +
-                    "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1UGAXW3H-bV1m0PWcDM7aGcRgkdrY-fovcPstB4YphvA/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
+                    "<tr><td colspan='10' style='padding-bottom: 1em;'><span class='instructions'><a href='https://docs.google.com/document/d/1EJFgb2NpVQtKWrtMxNhIYorb5baV2djaSVZqnL_JfX4/edit' target='_blank' class='instructions'>Coding Instructions</a></span></td></tr>" +
                     "<tr>" +
                     "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                     "<table>" +
