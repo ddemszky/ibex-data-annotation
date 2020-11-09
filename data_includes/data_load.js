@@ -53,7 +53,7 @@ var items = [
     } ],
 ];
 
-var data_names = [data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12];
+var data_names = [data0, data1, data2, data3, data4, data5];
 //var data_names = [dataChris, dataCourteney, dataJustin, dataKeith, dataShannon];
 
 
@@ -83,13 +83,9 @@ for (var j = 0; j < data_names.length; j++) {
                     "<td colspan='10' style='border: 1px solid black; padding=1em; background-color: #B0DBFF;'>" +
                     "<table>" +
                     "<tr>" +
-                    "<td colspan='10' style='width: 40em; padding: .5em;'><i>Lesson topic: " + row["topic"] + "</i>" +
-                    "</td>" +
-                    "</tr>" +
-                    "<tr>" +
                     "<td colspan='10' style='width: 40em; padding: .5em;'>" +
                     "<div class='tooltip'>Conversation history" +
-                    "<span class='tooltiptext'>" + row["hist_2"] + "<br>" + row["hist_3"] +
+                    "<span class='tooltiptext'>" + row["hist_-2"] + "<br>" + row["hist_-1"] +
                     "</span>" +
                     "</div>" +
                     "</td>" +
@@ -114,8 +110,8 @@ for (var j = 0; j < data_names.length; j++) {
                     "</td>" +
                     "</tr>" +
                     "<tr><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>1. Validity</b><br/><i>If any of the conditions below is not met, you can stop coding the example.</i></td></tr>" +
-                    "<tr><td colspan='10'><input type=\"checkbox\" name=\"student_on_task\" id='student_on_task' class='validity'/><label for=\"student_on_task\">Student utterance relates to mathematics.</label></td></tr>" +
-                    "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance relates to mathematics.</label></td></tr>" +
+                    "<tr><td colspan='10'><input type=\"checkbox\" name=\"student_on_task\" id='student_on_task' class='validity'/><label for=\"student_on_task\">Student utterance relates to English language and arts.</label></td></tr>" +
+                    "<tr><td colspan='10'><input type=\"checkbox\" name=\"teacher_on_task\" id='teacher_on_task' class='validity'/><label for=\"teacher_on_task\">Teacher utterance relates to English language and arts.</label></td></tr>" +
                     "<tr class='item2' style='display: none;'><td colspan='10' style='padding-top: 1em; padding-bottom: 1em;'><b>2. Display of Active Listening</b><br/><i>To what degree does the teacher show that they are listening to the student’s idea?</i></td></tr>" +
                     "<tr class='item2' style='display: none;'>" +
                     "<td colspan='3'><input name=\"active_listening\" type=\"radio\" value=\"low\" id=\"active_listening\"/><label for=\"active_listening\">Low </label></td>" +
